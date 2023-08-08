@@ -1,10 +1,13 @@
-import React from 'react';
-
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Dashboard from "./Pages/Dashboard";
 function App() {
   return (
-    <div className="text-5xl text-center mt-48">
-      <p>Good Luck!</p>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
